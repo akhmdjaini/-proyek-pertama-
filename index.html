@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Percobaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #pesan-status {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Halo, Dunia!</h1>
+        <p>Ini adalah halaman <b>index.html</b> untuk percobaan.</p>
+        
+        <!-- Tombol untuk menguji JavaScript -->
+        <button onclick="ujiJavaScript()">Klik untuk Cek JavaScript</button>
+        
+        <p id="pesan-status" style="color: red;">Jika tombol diklik dan teks ini tidak berubah, berarti JavaScript belum aktif.</p>
+    </div>
+
+    <script>
+        // Fungsi ini akan berjalan saat tombol diklik
+        function ujiJavaScript() {
+            var elemenPesan = document.getElementById("pesan-status");
+            elemenPesan.innerText = "Mantap! JavaScript aktif dan berjalan dengan baik.";
+            elemenPesan.style.color = "green";
+        }
+    </script>
+
+</body>
+</html>
